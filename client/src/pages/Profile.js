@@ -22,6 +22,7 @@ const Profile = () => {
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
     return <Navigate to="/profile" />;
   }
+  console.log(user);
 
   if (loading) {
     return <div>Loading...</div>;
